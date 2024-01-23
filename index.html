@@ -45,16 +45,16 @@
   <header>
 
 
-    <section class="container mx-auto">
+    <section class="container mx-auto lg:px-20 px-8 mt-5">
 
-      <nav>
+      <nav class="mt-5">
         <div class="navbar bg-white">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost img lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
               </div>
               <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
@@ -65,9 +65,11 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <p class="btn btn-ghost lg:text-gray-900 text-6xl font-extrabold">Hockey’s</p>
+            <div class="lg:-ml-4 ">
+              <p class="btn btn-ghost text-gray-900 text-2xl lg:text-6xl font-extrabold lg:-p-20 ">Hockey’s</p>
+            </div>
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden lg:flex ">
             <ul class="menu menu-horizontal px-1 text-base font-bold">
               <li><a class="text-red-500 text-base font-bold">Home</a></li>
               <li><a>About</a></li>
@@ -76,15 +78,46 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end space-x-4">
+          <div class="navbar-end lg:space-x-4">
             <div><img src="./Images/nav1.png" class="hidden lg:block" alt=""></div>
-            <a class="btn p-15-24 rounded-8 bg-red-500 text-white text-center text-base font-bold ">Get Ticket</a>
+            <a class="btn p-2 px-4 lg:p-15-24 rounded-8 bg-red-500 text-white text-center text-base font-bold ">Get
+              Ticket</a>
           </div>
         </div>
       </nav>
 
     </section>
 
+
+    <section class="class= container mx-auto lg:px-24 px-8 mt-16">
+      <div>
+        <div class="carousel">
+          <div id="slide1" class="carousel-item relative w-full justify-center">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❯</a>
+            </div>
+
+          </div>
+
+        </div>
+        <div
+          class="w-fit p-3 flex-col text-start items-center gap-16 rounded-xl bg-gray-900 text-white lg:absolute lg:transform lg:translate-y-40 right-80 top-1/2">
+          <h5 class="text-white text-2xl font-extrabold pb-3">Meet all the heroes from the field</h5>
+          <p class="text-gray-400 text-sm font-medium leading-6">Dit amet consectetur. Condimentum dignissim adipiscing
+            aliquam <br> turpis placerat dolor. Purus urna
+            in sit nullam proin.</p>
+        </div>
+      </div>
+    </section>
 
   </header>
 
